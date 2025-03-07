@@ -1,0 +1,470 @@
+
+body {
+    width:1700px;
+    background-color: #c6c8d4;
+    font-family: KomunaTrial Var;
+    background-size: cover; 
+    background-position: center; 
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.side2 :hover{
+    padding:1rem;
+    display:inline-block;
+    position: relative;
+    z-index: 10000;
+    background-color:#85e5ff; 
+    transition: background-color, padding, .25s ease-in-out;
+}
+
+details{
+    z-index: 9999999999;
+}
+
+.follow-detail{
+    text-indent:2em;
+    margin: 10pt;
+
+}
+
+
+.floating-image{
+    margin-top: 2.5rem;
+    margin-left: 5rem;
+    background-color: #85e5ff;
+    position: absolute;
+    z-index: 3;
+}
+
+.button-1 {
+    background-color: #006aff; 
+    margin-top: 4rem;;
+    font-family: GT Pressura Mono Trial;
+    font-size: 20px; 
+    border: none; 
+    cursor: pointer;
+    display: inline-block; 
+    position: absolute;
+    z-index: 3;
+}
+
+.button-1 a {
+    text-decoration: none;
+    font-style: none;
+
+}
+
+.floating-image{
+    animation: blinker 1s ;
+  }
+  
+  @keyframes blinker {
+    50% {opacity: 0;}
+  }
+
+h1{
+    display: inline-block; 
+    overflow: hidden;
+    width: 0;
+    animation: typing 1s steps(30, end) forwards;
+    line-height: 20pt;
+}
+p{animation: typing 2s steps(40, end) forwards;
+    font-family: GT Pressura Mono Trial;
+}
+
+details {
+    font-size: larger;
+    display:inline-block;
+    font-family: GT Pressura Mono Trial;
+}
+
+.pre{ font-family: GT Pressura Mono Trial; font-size: 18pt;line-height: 14pt;}
+ul{ font-family: GT Pressura Mono Trial;}
+
+.first-row{
+    display:flex;
+    gap:1rem;
+}
+
+.box-1{
+    height:150px;
+    width:150px;
+    background-color:#7AC4FF;
+    margin-bottom: 1rem;
+    display: block; 
+    position: absolute;
+    z-index: 0;
+  }
+
+  
+.box-2 {
+    font-size: 14px;
+    background-color: #85e5ff;
+    margin-top: 8rem;
+    font-family: GT Pressura Mono Trial;
+    text-align: center;
+    color: black;
+    display: block; 
+    position: absolute;
+    z-index: 2;
+    left: 50%;
+    text-align: left;
+    pointer-events: none;
+}
+
+
+.box-3 {
+    font-size: 340px;
+    font-family: KomunaTrial Var;
+    line-height: 240px;
+    text-align:left;
+    margin-top: -2rem;
+    margin-bottom: -4rem;
+    color: #000000;
+    display: block; 
+    position: absolute;
+    z-index: -9;
+    animation: boxblinking 1s;
+}
+.box-3 span{
+    display:inline;
+    margin-right:-160px;
+
+}
+
+.between {
+    text-align: left;
+    left:0;
+    top:650px;
+    position: absolute;
+    font-size: 300px;
+    font-family: KomunaTrial-6Round200Italic;
+    line-height: 240px;
+    text-align:left;
+    color: black;
+    display: inline-block; 
+    z-index: 99;
+    animation: boxblinking 1s;
+}
+
+.r {
+    text-align: right;
+    width:1700px;
+    margin-top: -2rem;
+    right:0;
+    position: absolute;
+    font-size: 300px;
+    font-family: KomunaTrial-6Round200Italic;
+    line-height: 240px;
+    text-align:left;
+    color: black;
+    display: block; 
+    z-index: 999;
+ 
+}
+
+
+.thankyou{
+
+        font-size: 14px;
+        background-color:#3c63d2;
+        margin-top: 55rem;
+        font-family: GT Pressura Mono Trial;
+        text-align: center;
+        color: black;
+        display: block; 
+        position: absolute;
+        left: 73%;z-index: 9999;
+        text-align: left;
+        pointer-events: none;
+    
+}
+
+.r:hover{
+    font-family:KomunaTrial-6Round200Italic;
+    transition: transform 0.3s ease-in-out;
+    animation: movements 4s infinite ease-in-out;
+}
+
+.goodimg{
+    animation: movements 4s infinite ease-in-out;
+}
+.between span{
+    width:1700px;
+    text-align: left;
+    left:0;
+    margin-left:-3rem;
+    font-size: 640px;
+    
+}
+
+.between span:hover{
+    width:1700px;
+    animation: movements 8s infinite ease-in-out;
+}
+
+@keyframes movements {
+    0%   { color: #85e5ff; transform: translateX(0px); }
+    50%  { color: #353cf9; transform: translateX(1700px); } 
+    100% { rcolor: #85e5ff; transform: translateX(0px); } } 
+
+
+
+.secret{
+    top:350px;
+    letter-spacing: -50pt;
+    position: absolute;
+    font-size: 1000px;
+    font-family:KomunaTrial-6Round25;
+    line-height: 240px;
+    text-align:left;
+    padding: -2rem;
+    margin-top: 0rem;
+    margin-bottom: -4rem;
+    color: black;
+    display: block; 
+    position: absolute;
+    z-index: -99;
+    animation: boxblinking 1s;
+}
+
+.box-3:hover{
+    margin-bottom: -6rem;
+    font-family:KomunaTrial-6Round200Italic;
+    transition: transform 0.3s ease-in-out;
+    animation-name: colorchange;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+@keyframes colorchange {
+    from {color: rgb(14, 0, 107);}
+    to {color: rgb(97, 202, 255);}
+  }
+
+@keyframes boxblinking {
+    50% {opacity: 0;}
+}
+
+img{
+    width: 20%;
+    height: auto;
+    position: fixed;
+
+}
+.big-container{
+    height:100vh;}
+
+ .d-flex {
+        display: flex;
+      }
+
+
+
+.highlight{
+    background-color:#00a6ff;
+}
+.grid-container {
+    flex: 2;
+    display: grid;
+    height:fit-content;
+    grid-template-columns: repeat(5,1fr);
+    grid-template-rows: repeat(5,1fr);
+    grid-gap: 1rem;
+    height: auto; 
+    min-height: 300px; 
+    width: max-content;
+}
+.block-1, .block-2, .block-3, .block-4, .block-5, .block-6, .block-7, .block-8, .block-9, .block-10, .block-11  {
+    background-color: #0091ff;
+    position: relative;
+    display: inline-block;
+}
+
+.block-1 { background-color:#3c63d2; grid-column: 3; grid-row: 1; }
+        .block-2 { background-color:#0059ff; grid-column: 2; grid-row: 2; }
+        .block-3 { background-color:#85e5ff; grid-column: 3; grid-row: 2; }
+        .block-4 { background-color:#3c63d2; grid-column: 4; grid-row: 2; }
+        .block-5 { background-color:#85e5ff; grid-column: 1; grid-row: 3; z-index: 100;}
+        .block-6 { background-color:#0059ff; grid-column: 4; grid-row: 3; }
+        .block-7 { background-color:#75a5ff; grid-column: 5; grid-row: 3; }
+        .block-8 { background-color:#3c63d2; grid-column: 1; grid-row: 4; }
+        .block-9 { background-color:#85e5ff; grid-column: 2; grid-row: 4; }
+        .block-10 { background-color:#75a5ff; grid-column: 5; grid-row: 5; z-index: 100;}
+        .block-11 { background-color:#85e5ff; grid-column: 2; grid-row: 5; }
+
+    .block-1:hover, .block-2:hover, .block-3:hover, .block-4:hover, .block-5:hover, 
+    .block-6:hover, .block-7:hover, .block-8:hover, .block-9:hover, .block-10:hover, .block-11:hover  {
+    animation-name: move;
+    animation-duration: 8s;
+    position: relative;
+  }
+  
+  @keyframes move {
+        0%   {background-color:#85e5ff; left:0px; top:0px;}
+        100% {background-color:#3c63d2; left:-350px; top:0px;}}
+
+
+
+.color-block{
+    flex: 2;
+    width:150px;
+    height:150px;
+}
+
+.side2{
+    width:25%;
+    margin-right:-1.5rem;
+    margin-top:13.5rem;
+
+}
+
+.side1 {
+    width:20%;
+    padding:1.5rem;
+    margin-top: 17rem;
+    margin-right:-5rem;
+    z-index: 999;
+}
+
+.side1 a:hover {
+    position:relative;
+    z-index: 1;
+}
+
+.side3{
+    width:25%;
+    padding:1.5rem;
+}
+.side4{
+    width:25%;
+    padding-left:3rem;
+
+}
+
+.side4 :hover{
+    padding:1rem;
+    display:inline-block;
+    position: relative;
+    background-color:#006aff;
+    transition: background-color, padding, .25s ease-in-out;
+    z-index: 1000;
+    color:#e0e0e0;
+    transition: color.25s ease-in-out;
+}
+
+.poem {
+    margin-top: -1rem;
+    white-space: pre;
+    font-size: 10px;
+}
+
+ul {
+    display: inline-block; 
+    overflow: hidden;
+    width: 0;
+    animation: typing 2s steps(40, end) forwards;
+}
+
+
+.poem span {
+    line-height:10px;
+    display: inline-block; 
+    overflow: hidden;
+    width: 0;
+    animation: typing 2s steps(40, end) forwards;
+}
+
+/* Add delays for each line */
+.poem span:nth-child(1) { animation-delay: 0s; }
+.poem span:nth-child(2) { animation-delay: 2s; }
+.poem span:nth-child(3) { animation-delay: 4s; }
+.poem span:nth-child(4) { animation-delay: 6s; }
+.poem span:nth-child(5) { animation-delay: 8s; }
+.poem span:nth-child(6) { animation-delay: 10s; }
+.poem span:nth-child(7) { animation-delay: 12s; }
+.poem span:nth-child(8) { animation-delay: 14s; }
+.poem span:nth-child(9) { animation-delay: 16s; }
+.poem span:nth-child(10) { animation-delay: 18s; }
+
+@keyframes typing {
+    from { width: 0; }
+    to { width: 100%; }
+}
+
+#nice {
+        color: green;
+        font-size: 40px;}
+
+        .navigation-bar{
+            display:inline-block;
+        }
+
+.fold-1 {
+        background-color: #00d9ff;
+        margin:-1rem;
+        display:inline-block;
+        margin-right:1rem;
+    }
+
+      
+.fold-1 a {
+        display: inline-block;  
+        background-color:#38d1ff;
+        text-align: center;
+        text-decoration: none;
+      }
+      
+      .fold-1:hover {
+        background-color: #53d7ff;
+        color: black;
+      }
+
+
+      .fold-1 {
+        background-color: #53d7ff;
+        margin:-1rem;
+        display: inline-block;  
+        margin-right:1rem;
+    }
+
+      
+.fold-1 a {
+    float: left;
+    display: inline;
+        color: #f2f2f2;
+        text-align: center;
+        text-decoration: none;
+      }
+      
+      .fold-1:hover {
+        background-color: #ddd;
+        color: black;
+      }
+
+
+
+      .fold-2 {
+        display:inline-block;
+        background-color:#53d7ff;
+        margin:-1rem;
+        margin-right:1rem;
+    }
+
+      
+.fold-2 a {
+    float: left;
+    display: block;
+        color: #f2f2f2;
+        text-align: center;
+        text-decoration: none;
+      }
+      
+      .fold-2:hover {
+        background-color:#53d7ff;
+        color: black;
+      }
+
+
